@@ -21,9 +21,11 @@ const Wrapper = styled.div`
 
     & h1 {
         display : block;
-        width : 150px;
+        width : 230px;
+        height : 120px;
         & img{
             width :230px;
+            margin-top :15px;
         }
     }
     
@@ -32,12 +34,18 @@ const Wrapper = styled.div`
     }
 `;
 
+const MyHeader = styled.header`
+    position: relative;
+    z-index: 99;
+    background: rgba(0,0,0,0.5);
+`;
+
 const Header: React.FC = (props: Props) => {
     return (
-        <header>
+        <MyHeader>
             <Wrapper>
                 <h1>
-                    <Link to='/'><img src={`${process.env.PUBLIC_URL}/asset/logo.png`} alt="뷰티풀스토리" /></Link>
+                    <Link to='/' style={{ display: "block" }}><img src={`${process.env.PUBLIC_URL}/asset/logo.png`} alt="뷰티풀스토리" /></Link>
                 </h1>
                 <List className="gnb top_menu">
                     <li>스토리</li>
@@ -46,7 +54,7 @@ const Header: React.FC = (props: Props) => {
                     <li>STACK</li>
                 </List>
             </Wrapper>
-        </header>
+        </MyHeader>
     )
 }
 

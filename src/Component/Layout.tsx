@@ -9,6 +9,7 @@ interface Props {
 
 const Wrapper = styled.div`
     width : 100%;
+    overflow-x : hidden;
 `;
 
 const Main = styled.main`

@@ -24,10 +24,13 @@ export const EventBox = styled.div`
     left : 50%;
     bottom : 0;
     width : 960px;
-    min-height : 360px;
-    transform : translateX(-50%);
-    border-radius : 15px 15px 0 0;
+    min-height : 280px;
+    color : #FFF;
     background : rgba(0, 0, 0, 0.6);
+    box-sizing :border-box;
+    padding : 15px 15px 0 15px;
+    border-radius : 15px 15px 0 0;
+    transform : translateX(-50%);
 `;
 
 export const EventTinyWrapper = styled.div`
